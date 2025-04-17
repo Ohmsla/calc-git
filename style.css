@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Agdasima", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ecf;
+}
+.oh {
+  width: fit-content;
+  font-size: 13px;
+  color: transparent;
+  background: linear-gradient(45deg, red, blue, orange, gray, black);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientMove 15s ease infinite;
+  text-align: center;
+  font-weight: 1000;
+  font-family: cursive;
+  margin-left: 5px;
+
+}
+@media (max-width: 600px) {
+  .oh {
+    font-size: 10px;
+  }
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+input {
+  grid-column: span 4;
+  text-align: end;
+  border-radius: 5px;
+  height: 5rem;
+  box-shadow: inset 3rem 3rem 1rem #d6cccc, 3rem 3rem 1rem rgba(0, 0, 0, 0.16);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.calci {
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem #d6cccc,
+    0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.16);
+  display: grid;
+  grid-template-columns: repeat(4, 4rem);
+  gap: 4px;
+}
+
+button {
+  height: 4rem;
+  width: 4rem;
+  border-width: 0.27rem;
+  border-radius: 40%;
+  font-size: 2rem;
+  font-weight: 450;
+}
+
+.equals {
+  width: 8rem;
+  border-radius: 3.4rem;
+  background-color: yellow;
+}
+
+.operator {
+  background-color: palevioletred;
+}
+
+.number {
+  background-color: rgb(64, 173, 246);
+}
